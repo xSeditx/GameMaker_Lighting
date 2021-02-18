@@ -1,3 +1,10 @@
+
+
+<div align="center">
+<h1>DEFIANT LIGHTING ENGINE
+</div>
+
+
 <p align="center">
 <h1>DEFIANT LIGHTING ENGINE</p>
 <h3>for</h3>
@@ -6,6 +13,3 @@
 
 
  
-<div align="center">
-<h1>my text here.
-</div>
