@@ -43,6 +43,6 @@
 
     Two Utility functions are provided to simplify the conversion between these two coordinate systems however it is advised against heavy use of these functions as they involve the returning of [X,Y] in worldspace_to_room's case and [X,Y,Z] in room_to_worldspace return. Despite it being nothing more than the creation of an array Profiling of this module has shown me that compared to all other stuff I have written here Array Creation and Return from these functions is a relatively resource intensive operation. This is  not to say they should be totally avoided, just that it is best to first profile for yourself and decide how you feel about the extra demand it puts on the system when you could easily just calculate it yourself as needed.
   
-   worldspace_to_room(_vec)              ~ Provide it with a Vec3 position Vector and it will return a 2 element Array [X,Y]
+   worldspace_to_room(_vec)              ~ Provide it with a Vec3 position Vector and it will return a 2 element Array [X,Y] <br>
    room_to_worldspace(_x, _y, _height)   ~ Provide it with X and Y room coordinates and a Height value and it returns a 3 component [X,Y,Z] Array
                                        which directly maps to the coordinate systems our Lights and Mapping algorithms use.
