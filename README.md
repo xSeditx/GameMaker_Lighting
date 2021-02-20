@@ -156,9 +156,9 @@
         
 
 
-Function Names |  Parameters   | Description
------------------ | --- | ----------------------------
-room_to_worldspace |(_x, _y, _height)    |         Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
+Function Names |  Parameters.....................   | Description
+----------------- | ---------------------------- | ----------------------------
+room_to_worldspace  |(_x, _y, _height)    |         Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
 light_create | (_x, _y, _height, _radius, _color)|  Creates a Light with the desired properties
 light_set_size | (_light, _radius)               | Sets the Size of the Light to a given Radius 
 light_set_color | (_light, _color)               |   Sets the 32Bit Color of the Light object
