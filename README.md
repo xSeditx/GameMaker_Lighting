@@ -154,6 +154,9 @@
 
         
 
+<details>
+<summary> Lighting Functions </summary>
+
 
 Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
@@ -170,20 +173,11 @@ is_On | _light                                  |  Returns True if Light is On
 is_Off | _light                                 |  Returns True if Light is Off
 
 
+</details>
 
 
 <details>
 <summary>NOTE: DEPRECATED - Had uses but Changed the Lighting Algorithm eliminating need for Mask </summary>
-
- 1. Put an **empty line** after the `<summary>` block.
- 2. *Insert your markdown syntax*
- 3. Put an **empty line** before the `</details>` tag
- 
-
-
-  
-
-
 
 Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
@@ -191,6 +185,8 @@ light_set_mask    |    _light, _lightMask    |  Sets the Mask a light will use t
 draw_surface_pos    |    _surfID,  _x1, _y1, _x2, _y2, _x3, _y3, _x4, _y4, _alpha  | Surface equivalent to draw_sprite_pos(...)	
 		  
 </details>
+
+
   ##### DEBUG ONLY FUNCTIONS:
 	
         function _WARN_ME(_text) - This ensures as projects grow larger I remember details	
