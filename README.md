@@ -107,6 +107,9 @@
  #### STRUCTS
 <hr>
 
+<details>
+<summary> Structures </summary>
+
    -------------------------------------------------------------------------------------------------------------------------------------------
      Vec3 (_x, _y, _z)  A Type used to Define a point in 3D Space. 
    ___________________________________________________________________________________________________________________________________________		
@@ -124,13 +127,16 @@
              Vec3.distance(_other)      Returns the Distance of _other from Self
    ____________________________________________________________________________________________________________________________________
 
-
+</details>
 
 
 <hr>
 
  #### CONSTANTS:
 <hr>
+
+<details>
+<summary> Constants </summary>
 
    -------------------------------------------------------------------------------------------------------------------------------------------
         USED FOR INDEXING A SPECIFIC PART OF THE FALLOFF_RATES GLOBAL ARRAY.	
@@ -144,6 +150,8 @@
 			var Linear_Value = LightFalloff[Linear_Term];
 		}	
    ____________________________________________________________________________________________________________________________________			
+
+</details>
 
 
 
@@ -159,9 +167,6 @@
 
 Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
-room_to_worldspace     | _x, _y, _height        |  Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
-has_Normals            | _objInst               |  Returns True if obj_shadowed Object has a Custom Normal Map
-calculate_attenuation | _dist                   |  Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
 light_create | _x, _y, _height, _radius, _color |  Creates a Light with the desired properties
 light_set_size | _light, _radius                |  Sets the Size of the Light to a given Radius 
 light_set_color | _light, _color                |  Sets the 32Bit Color of the Light object
@@ -185,7 +190,7 @@ Function Names ____________________ |  Parameters ______________________________
 :--- | :---: | :---
 room_to_worldspace     | _x, _y, _height        |  Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
 has_Normals            | _objInst               |  Returns True if obj_shadowed Object has a Custom Normal Map
-calculate_attenuation | _dist                   |  Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
+calculate_attenuation  | _dist                  |  Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
 
 
 </details>
@@ -194,7 +199,7 @@ calculate_attenuation | _dist                   |  Calculates Falloff rates for 
 
 
 <details>
-<summary>DEPRECATED - Had uses but Changed the Lighting Algorithm eliminating need for Mask </summary>
+<summary> DEPRECATED - Had uses but Changed the Lighting Algorithm eliminating need for Mask </summary>
 
 Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
