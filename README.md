@@ -155,7 +155,7 @@
         
 
 
-Function Names ________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
+Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
 room_to_worldspace     | _x, _y, _height        |  Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
 has_Normals            | _objInst               |  Returns True if obj_shadowed Object has a Custom Normal Map
