@@ -74,7 +74,7 @@
 
 
 <hr>	
-### GLOBALS 
+#### GLOBALS 
 <hr>	
 	 Type:ds_map()        -   shadow_sprite_map   Used to Generate a List of Shadows for every object depending on what Sprite the Object uses. 
 	                                              Prevents overuse of Memory and Duplication of Shadow sprites
@@ -86,7 +86,7 @@
 											
 <hr>
 
- ### TYPES:
+ #### TYPES:
 <hr>	
         ENUMS
    ___________________________________________________________________________________________________________________________________________
@@ -104,7 +104,7 @@
 
 <hr>
 
- ### STRUCTS
+ #### STRUCTS
 <hr>
 
    -------------------------------------------------------------------------------------------------------------------------------------------
@@ -129,7 +129,7 @@
 
 <hr>
 
- ### CONSTANTS:
+ #### CONSTANTS:
 <hr>
 
    -------------------------------------------------------------------------------------------------------------------------------------------
@@ -149,7 +149,7 @@
 
 <hr>	
 
- ### FUNCTION LIST:
+ #### FUNCTION LIST:
 <hr>
         function has_Normals(_objInst)                          Returns True if obj_shadowed Object has a Custom Normal Map
         function calculate_attenuation(_dist)                   Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
@@ -176,7 +176,7 @@
 		  ---- Surface equivalent to draw_sprite_pos(...)	
 		  
 		  
-  ### DEBUG ONLY FUNCTIONS:
+  ##### DEBUG ONLY FUNCTIONS:
 	
         function _WARN_ME(_text) - This ensures as projects grow larger I remember details	
 		    Text to Remind the Programmer of whatever _text says printed to screen
