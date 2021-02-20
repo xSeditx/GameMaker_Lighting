@@ -84,7 +84,7 @@
 											
 											
 <hr>                                                                                
-### TYPES:
+ ### TYPES:
 <hr>	
         ENUMS
    ___________________________________________________________________________________________________________________________________________
@@ -101,7 +101,7 @@
 		
 
 <hr>
-### STRUCTS
+ ### STRUCTS
 <hr>
 
    -------------------------------------------------------------------------------------------------------------------------------------------
@@ -125,7 +125,7 @@
 
 
 <hr>
-### CONSTANTS:
+ ### CONSTANTS:
 <hr>
 
    -------------------------------------------------------------------------------------------------------------------------------------------
@@ -144,7 +144,7 @@
 
 
 <hr>			
-### FUNCTION LIST:
+ ### FUNCTION LIST:
 <hr>
         function has_Normals(_objInst)                          Returns True if obj_shadowed Object has a Custom Normal Map
         function calculate_attenuation(_dist)                   Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
