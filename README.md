@@ -25,6 +25,7 @@
     Y coordinate in the world is used to determine how high an object is off the ground IE: how far its bbox_bottom is from its appearent location in our GMS room editor.
 
 <hr>
+
   Locations of objects in the world are calculated for lighting as such.
 <hr>
 
@@ -83,7 +84,8 @@
 											
 											
 											
-<hr>                                                                                
+<hr>
+
  ### TYPES:
 <hr>	
         ENUMS
@@ -101,6 +103,7 @@
 		
 
 <hr>
+
  ### STRUCTS
 <hr>
 
@@ -125,6 +128,7 @@
 
 
 <hr>
+
  ### CONSTANTS:
 <hr>
 
@@ -143,7 +147,8 @@
 
 
 
-<hr>			
+<hr>	
+
  ### FUNCTION LIST:
 <hr>
         function has_Normals(_objInst)                          Returns True if obj_shadowed Object has a Custom Normal Map
