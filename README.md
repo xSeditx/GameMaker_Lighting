@@ -175,8 +175,8 @@ is_Off | _light                                 |  Returns True if Light is Off
 
 <p align="center">
 
-[NOTE: DEPRECATED??? ]
-*[Had uses but Changed the Lighting Algorithm eliminating need for Mask]*
+    [NOTE: DEPRECATED??? ]
+    *[Had uses but Changed the Lighting Algorithm eliminating need for Mask]*
 </p>
  
 
