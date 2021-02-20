@@ -73,25 +73,27 @@
 
 
 
+<hr>
 
+### Data Types
+<hr>
+ 
 
-
-<hr>	
-#### GLOBALS 
-<hr>	
+<details>
+<summary> Globals </summary>
 	 Type:ds_map()        -   shadow_sprite_map   Used to Generate a List of Shadows for every object depending on what Sprite the Object uses. 
 	                                              Prevents overuse of Memory and Duplication of Shadow sprites
 	
 	 Type:array of arrays -   Falloff_rates       An Array of Arrays containing 3 Elements a piece. Intended to be used with Enum light_dist
 	                                        Will return a 3 Component array containing the attenuation [Constant, Linear, Quadratic] values
 											
-											
-											
-<hr>
+</details>									
+		
+ 
 
- #### TYPES:
-<hr>	
-        ENUMS
+<details>
+<summary> Enums </summary>								
+
    ___________________________________________________________________________________________________________________________________________
         enum light_dist ~ Enumeration of build in, precalculated, attenuation rates for lights. 
 		It gets used in the Global Array, Falloff_rates[], and has values ranging from
@@ -102,13 +104,10 @@
 		    // If we wished the light to be almost completely fallen off by 325 pixels
 		    obj_pointlight.light_falloff = Falloff_rates[light_dist._325px]
 		}
-		
-		
 
-<hr>
-
- #### STRUCTS
-<hr>
+</details>
+		
+ 
 
 <details>
 <summary> Structures </summary>
@@ -134,7 +133,7 @@
 
 
 <details>
-<summary> #### Constants </summary>
+<summary> Constants </summary>
 
    -------------------------------------------------------------------------------------------------------------------------------------------
         USED FOR INDEXING A SPECIFIC PART OF THE FALLOFF_RATES GLOBAL ARRAY.	
