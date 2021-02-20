@@ -152,7 +152,6 @@
  #### FUNCTION LIST:
 <hr>
 
-        
 
 <details>
 <summary> Lighting Functions </summary>
@@ -176,8 +175,26 @@ is_Off | _light                                 |  Returns True if Light is Off
 </details>
 
 
+
+
 <details>
-<summary>NOTE: DEPRECATED - Had uses but Changed the Lighting Algorithm eliminating need for Mask </summary>
+<summary> Utility Functions </summary>
+
+
+Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
+:--- | :---: | :---
+room_to_worldspace     | _x, _y, _height        |  Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
+has_Normals            | _objInst               |  Returns True if obj_shadowed Object has a Custom Normal Map
+calculate_attenuation | _dist                   |  Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
+
+
+</details>
+
+
+
+
+<details>
+<summary>DEPRECATED - Had uses but Changed the Lighting Algorithm eliminating need for Mask </summary>
 
 Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
@@ -187,7 +204,9 @@ draw_surface_pos    |    _surfID,  _x1, _y1, _x2, _y2, _x3, _y3, _x4, _y4, _alph
 </details>
 
 
-  ##### DEBUG ONLY FUNCTIONS:
+
+
+##### DEBUG ONLY FUNCTIONS:
 	
         function _WARN_ME(_text) - This ensures as projects grow larger I remember details	
 		    Text to Remind the Programmer of whatever _text says printed to screen
