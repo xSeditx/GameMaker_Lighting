@@ -215,6 +215,4 @@ draw_surface_pos    |    _surfID,  _x1, _y1, _x2, _y2, _x3, _y3, _x4, _y4, _alph
 
 Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
-_WARN_ME | _text | This ensures as projects grow larger I remember details	
-		    Text to Remind the Programmer of whatever _text says printed to screen
-		    Generates a Debug Message and Break when in _DEBUG mode. 
+_WARN_ME | _text | This ensures as projects grow larger I remember details. Reminds the Programmer of whatever _text says and prints to screen generating a Debug Message and Breaks when in _DEBUG mode. 
