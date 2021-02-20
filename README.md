@@ -154,15 +154,18 @@
         function has_Normals(_objInst)                          Returns True if obj_shadowed Object has a Custom Normal Map
         function calculate_attenuation(_dist)                   Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
         
-        function room_to_worldspace(_x, _y, _height)            Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
-        function light_create(_x, _y, _height, _radius, _color) Creates a Light with the desired properties
-        function light_set_size(_light, _radius)                Sets the Size of the Light to a given Radius 
-        function light_set_color(_light, _color)                Sets the 32Bit Color of the Light object
-        function light_set_color_rgb(_light,  _r, _g, _b)       Sets the Color of Light using RGB Channels
-        function light_set_position(_light, _x, _y, _z)         Sets the Position of the Light in 3D WorldSpace
-        function light_enable(_light, _On_Off)                  Turns the Light On or Off using the boolean Parameter for True/False
-        function is_On(_light)                                  Returns True if Light is On
-        function is_Off(_light)                                 Returns True if Light is Off
+
+Function Names |    Description
+-------------------- | ----------------------------
+room_to_worldspace(_x, _y, _height)    |         Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
+light_create(_x, _y, _height, _radius, _color)|  Creates a Light with the desired properties
+light_set_size(_light, _radius)               | Sets the Size of the Light to a given Radius 
+light_set_color(_light, _color)               |   Sets the 32Bit Color of the Light object
+light_set_color_rgb(_light,  _r, _g, _b)      |  Sets the Color of Light using RGB Channels
+light_set_position(_light, _x, _y, _z)        |  Sets the Position of the Light in 3D WorldSpace
+light_enable(_light, _On_Off)                 |  Turns the Light On or Off using the boolean Parameter for True/False
+is_On(_light)                                 |  Returns True if Light is On
+is_Off(_light)                                |  Returns True if Light is Off
 		
         
 		
