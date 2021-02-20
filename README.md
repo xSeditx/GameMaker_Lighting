@@ -216,3 +216,47 @@ draw_surface_pos    |    _surfID,  _x1, _y1, _x2, _y2, _x3, _y3, _x4, _y4, _alph
 Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
 :--- | :---: | :---
 _WARN_ME | _text | This ensures as projects grow larger I remember details. Reminds the Programmer of whatever _text says and prints to screen generating a Debug Message and Breaks when in _DEBUG mode. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details>
+<summary> Utility Functions </summary>
+
+<details>
+  <summary> room_to_worldspace </summary>
+ Parameters:  _x, _y, _height        
+ Description: Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine	
+</details>
+
+<details>
+  <summary> has_Normals </summary>
+ Parameters:  _objInst
+ Description: 	  Returns True if obj_shadowed Object has a Custom Normal Map
+</details>
+
+<details>
+  <summary> calculate_attenuation </summary>
+ Parameters: _dist
+ Description:  Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance	
+</details>
+
+</details>
+ 
+ 
