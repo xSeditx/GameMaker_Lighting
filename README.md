@@ -210,7 +210,11 @@ draw_surface_pos    |    _surfID,  _x1, _y1, _x2, _y2, _x3, _y3, _x4, _y4, _alph
 <hr>
 
 ##### DEBUG ONLY FUNCTIONS:
-	
-        function _WARN_ME(_text) - This ensures as projects grow larger I remember details	
+</hr>
+
+
+Function Names ____________________ |  Parameters __________________________________________________  | Description <br> ___________________________________________________
+:--- | :---: | :---
+_WARN_ME | _text | This ensures as projects grow larger I remember details	
 		    Text to Remind the Programmer of whatever _text says printed to screen
 		    Generates a Debug Message and Break when in _DEBUG mode. 
