@@ -12,7 +12,10 @@
 <div align="center">
 <h3>Author: Sedit ~2021
 </div>
- 
+<div align="center">
+<h5>They said it couldn't be done... We didn't listen!
+</div>
+	 
  <hr>
  <h2>UNDERSTANDING 3D WORLD SPACE AND HOW IT APPLIES TO OUR GMS ROOM </h2>   
  <hr>
@@ -210,12 +213,10 @@ draw_surface_pos    |    _surfID,  _x1, _y1, _x2, _y2, _x3, _y3, _x4, _y4, _alph
 
 
 
+<hr>
 
 ##### DEBUG ONLY FUNCTIONS:
 	
         function _WARN_ME(_text) - This ensures as projects grow larger I remember details	
 		    Text to Remind the Programmer of whatever _text says printed to screen
 		    Generates a Debug Message and Break when in _DEBUG mode. 
-=========================================================================================================================================== 
-
-
