@@ -46,3 +46,138 @@
    worldspace_to_room(_vec)              ~ Provide it with a Vec3 position Vector and it will return a 2 element Array [X,Y] <br>
    room_to_worldspace(_x, _y, _height)   ~ Provide it with X and Y room coordinates and a Height value and it returns a 3 component [X,Y,Z] Array
                                        which directly maps to the coordinate systems our Lights and Mapping algorithms use.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ===========================================================================================================================================
+    
+   ===========================================================================================================================================	
+##	GLOBALS 
+   ===========================================================================================================================================	
+	 Type:ds_map()        -   shadow_sprite_map   Used to Generate a List of Shadows for every object depending on what Sprite the Object uses. 
+	                                              Prevents overuse of Memory and Duplication of Shadow sprites
+	
+	 Type:array of arrays -   Falloff_rates       An Array of Arrays containing 3 Elements a piece. Intended to be used with Enum light_dist
+	                                        Will return a 3 Component array containing the attenuation [Constant, Linear, Quadratic] values
+											
+											
+											
+   ===========================================================================================================================================                                                                             
+## TYPES:
+   ===========================================================================================================================================	
+        ENUMS
+   ___________________________________________________________________________________________________________________________________________
+        enum light_dist ~ Enumeration of build in, precalculated, attenuation rates for lights. 
+		It gets used in the Global Array, Falloff_rates[], and has values ranging from
+		light_dist._7px - light_dist._3250px measured in pixels
+ 
+        EX:
+		{
+		    // If we wished the light to be almost completely fallen off by 325 pixels
+		    obj_pointlight.light_falloff = Falloff_rates[light_dist._325px]
+		}
+		
+		
+
+   ===========================================================================================================================================
+      ## STRUCTS
+   ===========================================================================================================================================
+
+   -------------------------------------------------------------------------------------------------------------------------------------------
+     Vec3 (_x, _y, _z)  A Type used to Define a point in 3D Space. 
+   ___________________________________________________________________________________________________________________________________________		
+         X = Horizantal position in the room
+         Y = Height of object off the ground. 
+         Z = Vertical position in the room ( gms Y value)
+			
+        METHODS:
+             Vec3.set(_x, _y, _z)       Sets the Values of XYZ
+             Vec3.add(_other)           Adds _other Vec3 to Self and returns result in new Vec3 
+             Vec3.subtract(_other)      Subtracts _other Vec3 from Self and return result in new Vec3
+             Vec3.multiply(_other)      Multiplies _other Vec3 to Self and returns result in new Vec3 
+             Vec3.divide(_other)        Divides Self by _other Vec3 and returns result in new Vec3 
+             Vec3.length()              Returns the Length of the Vector from [0,0,0]
+             Vec3.distance(_other)      Returns the Distance of _other from Self
+   ____________________________________________________________________________________________________________________________________
+
+
+
+
+   ===========================================================================================================================================
+   ## CONSTANTS:
+   ===========================================================================================================================================	
+
+   -------------------------------------------------------------------------------------------------------------------------------------------
+        USED FOR INDEXING A SPECIFIC PART OF THE FALLOFF_RATES GLOBAL ARRAY.	
+	        Constant_Term  = 0
+            Linear_Term    = 1
+            Quadratic_Term = 2
+
+        EX:
+		{
+		    var LightFalloff = Falloff_rates[light_dist._600px];  
+			var Linear_Value = LightFalloff[Linear_Term];
+		}	
+   ____________________________________________________________________________________________________________________________________			
+
+
+
+   ===========================================================================================================================================			
+   ## FUNCTION LIST:
+   ===========================================================================================================================================
+        function has_Normals(_objInst)                          Returns True if obj_shadowed Object has a Custom Normal Map
+        function calculate_attenuation(_dist)                   Calculates Falloff rates for Linear and Quadratic Light fall off if provided a distance
+        
+        function room_to_worldspace(_x, _y, _height)            Converts 2D XY roomspace, Plus additional Height variable into 3D world space for the Light engine
+        function light_create(_x, _y, _height, _radius, _color) Creates a Light with the desired properties
+        function light_set_size(_light, _radius)                Sets the Size of the Light to a given Radius 
+        function light_set_color(_light, _color)                Sets the 32Bit Color of the Light object
+        function light_set_color_rgb(_light,  _r, _g, _b)       Sets the Color of Light using RGB Channels
+        function light_set_position(_light, _x, _y, _z)         Sets the Position of the Light in 3D WorldSpace
+        function light_enable(_light, _On_Off)                  Turns the Light On or Off using the boolean Parameter for True/False
+        function is_On(_light)                                  Returns True if Light is On
+        function is_Off(_light)                                 Returns True if Light is Off
+		
+        
+		
+        [NOTE: DEPRECATED??? ]
+		[Had uses but Changed the Lighting Algorithm eliminating need for Mask]
+		  function light_set_mask(_light, _lightMask)-      
+		  ---- Sets the Mask a light will use to Blend to the Surface		
+		  
+        [draw_surface_pos Still works but is also no longer needed]
+          function draw_surface_pos(_surfID,  _x1, _y1, _x2, _y2, _x3, _y3, _x4, _y4, _alpha)	
+		  ---- Surface equivalent to draw_sprite_pos(...)	
+		  
+		  
+  ## DEBUG ONLY FUNCTIONS:
+	
+        function _WARN_ME(_text) - This ensures as projects grow larger I remember details	
+		    Text to Remind the Programmer of whatever _text says printed to screen
+		    Generates a Debug Message and Break when in _DEBUG mode. 
+=========================================================================================================================================== 
+
+
