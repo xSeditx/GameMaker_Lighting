@@ -133,13 +133,8 @@
 </details>
 
 
-<hr>
-
- #### CONSTANTS:
-<hr>
-
 <details>
-<summary> Constants </summary>
+<summary> #### Constants </summary>
 
    -------------------------------------------------------------------------------------------------------------------------------------------
         USED FOR INDEXING A SPECIFIC PART OF THE FALLOFF_RATES GLOBAL ARRAY.	
